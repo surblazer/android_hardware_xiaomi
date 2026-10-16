@@ -15,7 +15,6 @@ cc_binary {
     vintf_fragments: ["vendor.lineage.accessories-service.xiaomi.xml"],
     srcs: [
         "mipad5keyboard/MiPad5Keyboard.cpp",
-        "mipad5keyboard/MiPad5KeyboardCommands.cpp",
         "xiaomismartpen/XiaomiSmartPen.cpp",
         "SysfsPoller.cpp",
         "XiaomiAccessories.cpp",
@@ -24,6 +23,5 @@ cc_binary {
     shared_libs: [
         "libbase",
         "libbinder_ndk",
-        "libusb",
     ],
 }

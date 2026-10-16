@@ -8,7 +8,6 @@
 #include <aidl/vendor/lineage/accessories/Accessory.h>
 #include <aidl/vendor/lineage/accessories/BnAccessory.h>
 #include <atomic>
-#include <libusb/libusb.h>
 #include <mutex>
 #include "../SysfsPoller.h"
 
@@ -30,8 +29,6 @@ class MiPad5Keyboard : public Accessory {
     ::ndk::ScopedAStatus setEnabled(bool enabled) override;
 
   private:
-    libusb_context* mLibUsbContext;
-
     bool mConnected;
     SysfsPoller mConnectionStatusPoller;
     std::atomic<bool> mPendingUpdate;
