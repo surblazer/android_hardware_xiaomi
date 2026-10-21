@@ -8,7 +8,6 @@
 #define LOG_TAG "XiaomiAccessories"
 
 #include <android-base/logging.h>
-#include "mipad5keyboard/MiPad5Keyboard.h"
 #include "xiaomismartpen/XiaomiSmartPen.h"
 
 namespace aidl {
@@ -17,7 +16,6 @@ namespace lineage {
 namespace accessories {
 
 XiaomiAccessories::XiaomiAccessories() {
-    addAccessory(::ndk::SharedRefBase::make<MiPad5Keyboard>());
     addAccessory(::ndk::SharedRefBase::make<XiaomiSmartPen>());
 }
 

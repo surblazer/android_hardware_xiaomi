@@ -4,11 +4,6 @@
 #
 
 on boot
-    # Xiaomi Mi Pad 5 keyboard
-    chown root root /sys/devices/platform/soc/soc:xiaomi_keyboard/xiaomi_keyboard_conn_status
-    chown root root /sys/devices/platform/soc/soc:xiaomi_keyboard/xiaomi_keyboard_connected
-    chown root root /sys/devices/platform/soc/soc:xiaomi_keyboard/xiaomi_keyboard_enabled
-
     # Xiaomi Smart Pen
     chown root root /sys/touchpanel/pen
 
